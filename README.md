@@ -1,2 +1,2 @@
-# neovim_setup
-My setup for neovim
+# Personal neovim Configuration
+My personal setup for neovim from [Josean Martinez's version](https://github.com/josean-dev/dev-environment-files)
