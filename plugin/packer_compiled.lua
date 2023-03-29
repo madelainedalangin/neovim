@@ -132,7 +132,6 @@ _G.packer_plugins = {
   ["lua-language-server"] = {
     loaded = true,
     path = "/Users/madelainedalangin/.local/share/nvim/site/pack/packer/start/lua-language-server",
-    url = "https://github.com/LuaLs/lua-language-server"
   },
   ["lualine.nvim"] = {
     loaded = true,
