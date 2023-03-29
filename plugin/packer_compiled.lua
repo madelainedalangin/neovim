@@ -153,6 +153,11 @@ _G.packer_plugins = {
     path = "/Users/madelainedalangin/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
+  ["melange-nvim"] = {
+    loaded = true,
+    path = "/Users/madelainedalangin/.local/share/nvim/site/pack/packer/start/melange-nvim",
+    url = "https://github.com/savq/melange-nvim"
+  },
   ["null-ls.nvim"] = {
     loaded = true,
     path = "/Users/madelainedalangin/.local/share/nvim/site/pack/packer/start/null-ls.nvim",
@@ -229,11 +234,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/madelainedalangin/.local/share/nvim/site/pack/packer/start/vim-maximizer",
     url = "https://github.com/szw/vim-maximizer"
-  },
-  ["vim-nightfly-guicolors"] = {
-    loaded = true,
-    path = "/Users/madelainedalangin/.local/share/nvim/site/pack/packer/start/vim-nightfly-guicolors",
-    url = "https://github.com/bluz71/vim-nightfly-guicolors"
   },
   ["vim-surround"] = {
     loaded = true,

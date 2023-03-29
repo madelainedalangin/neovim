@@ -34,7 +34,10 @@ return packer.startup(function(use)
 	use("LuaLS/lua-language-server")
 
 
-	use("bluz71/vim-nightfly-guicolors") -- preferred colour scheme
+	--use("bluz71/vim-nightfly-guicolors") -- preferred colour scheme
+
+	--melange colorscheme
+	use("savq/melange-nvim")
 
 	--tmux & split window navigation
 	use("christoomey/vim-tmux-navigator")
