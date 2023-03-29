@@ -29,15 +29,13 @@ return packer.startup(function(use)
 
 	--lua functions that many plugins use
 	use("nvim-lua/plenary.nvim")
-  
 
 	use("LuaLS/lua-language-server")
 
-
-	--use("bluz71/vim-nightfly-guicolors") -- preferred colour scheme
+	use("bluz71/vim-nightfly-guicolors") -- preferred colour scheme
 
 	--melange colorscheme
-	use("savq/melange-nvim")
+	--use("savq/melange-nvim")
 
 	--tmux & split window navigation
 	use("christoomey/vim-tmux-navigator")
