@@ -129,6 +129,11 @@ _G.packer_plugins = {
     path = "/Users/madelainedalangin/.local/share/nvim/site/pack/packer/start/lspsaga.nvim",
     url = "https://github.com/glepnir/lspsaga.nvim"
   },
+  ["lua-language-server"] = {
+    loaded = true,
+    path = "/Users/madelainedalangin/.local/share/nvim/site/pack/packer/start/lua-language-server",
+    url = "https://github.com/LuaLs/lua-language-server"
+  },
   ["lualine.nvim"] = {
     loaded = true,
     path = "/Users/madelainedalangin/.local/share/nvim/site/pack/packer/start/lualine.nvim",
@@ -202,7 +207,6 @@ _G.packer_plugins = {
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
   ["presence.nvim"] = {
-    config = { "require('presence')" },
     loaded = true,
     path = "/Users/madelainedalangin/.local/share/nvim/site/pack/packer/start/presence.nvim",
     url = "https://github.com/andweeb/presence.nvim"
@@ -245,10 +249,6 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: presence.nvim
-time([[Config for presence.nvim]], true)
-require('presence')
-time([[Config for presence.nvim]], false)
 -- Load plugins in order defined by `after`
 time([[Sequenced loading]], true)
 vim.cmd [[ packadd nvim-treesitter ]]
