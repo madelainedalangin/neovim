@@ -1,6 +1,6 @@
--- import gitsigns plugin safely 
-local presence, gitsigns = pcall(require, "presence")
-if not setup then
+-- import gitsigns plugin safely
+local presence_setup, presence = pcall(require, "presence")
+if not presence_setup then
 	return
 end
 
@@ -8,8 +8,8 @@ end
 require("presence").setup({
 	-- General options
 	auto_update = true, -- Update activity based on autocmd events (if `false`, map or manually execute `:lua package.loaded.presence:update()`)
-	neovim_image_text = "Not VSCode :^)", -- Text displayed when hovered over the Neovim image
-	main_image = "neovim", -- Main image display (either "neovim" or "file")
+	neovim_image_text = "M 🌙", -- Text displayed when hovered over the Neovim image
+	main_image = "file", -- Main image display (either "neovim" or "file")
 	client_id = "793271441293967371", -- Use your own Discord application client id (not recommended)
 	log_level = nil, -- Log messages at or above this level (one of the following: "debug", "info", "warn", "error")
 	debounce_timeout = 10, -- Number of seconds to debounce events (or calls to `:lua package.loaded.presence:update(<filename>, true)`)
@@ -25,6 +25,6 @@ require("presence").setup({
 	--git_commit_text = "", -- Format string rendered when committing changes in git (either string or function(filename: string): string)
 	--plugin_manager_text = "¯\_(ツ)_/¯", -- Format string rendered when managing plugins (either string or function(plugin_manager_name: string): string)
 	reading_text = "Reading", -- Format string rendered when a read-only or unmodifiable file is loaded in the buffer (either string or function(filename: string): string)
-	workspace_text = "Working...", -- Format string rendered when in a git repository (either string or function(project_name: string|nil, filename: string): string)
+	workspace_text = "Working on a new obssession", -- Format string rendered when in a git repository (either string or function(project_name: string|nil, filename: string): string)
 	line_number_text = "Line %s out of %s", -- Format string rendered when `enable_line_number` is set to true (either string or function(line_number: number, line_count: number): string)
 })
