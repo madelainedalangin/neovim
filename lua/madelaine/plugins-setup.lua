@@ -116,6 +116,30 @@ return packer.startup(function(use)
 	--discord presence
 	use("andweeb/presence.nvim")
 
+	--duck plug
+	use({
+		"tamton-aquib/duck.nvim",
+		config = function()
+			vim.keymap.set("n", "<leader>dd", function()
+				require("duck").hatch("🦆", 10)
+			end, {})
+			vim.keymap.set("n", "<leader>bruno", function()
+				require("duck").hatch("🐈", 5.5)
+			end, {})
+
+			vim.keymap.set("n", "<leader>ph", function()
+				require("duck").hatch("🐻", 6.0)
+			end, {})
+
+			vim.keymap.set("n", "<leader>bee", function()
+				require("duck").hatch("🐝", 12.0)
+			end, {})
+			vim.keymap.set("n", "<leader>dk", function()
+				require("duck").cook()
+			end, {})
+		end,
+	})
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end
