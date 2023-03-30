@@ -55,6 +55,8 @@ return packer.startup(function(use)
 
 	--icons
 	use("kyazdani42/nvim-web-devicons")
+	--tabs
+	use({ "romgrk/barbar.nvim", requires = "kyazdani42/nvim-web-devicons" })
 
 	--statusline
 	use("nvim-lualine/lualine.nvim")
