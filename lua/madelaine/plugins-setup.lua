@@ -94,7 +94,7 @@ return packer.startup(function(use)
 	use("onsails/lspkind.nvim") -- vs-code like icons for autocompletion
 
 	-- formatting & lintin
-  use("jose-elias-alvarez/null-ls.nvim") -- configure formatters & linters
+	use("jose-elias-alvarez/null-ls.nvim") -- configure formatters & linters
 	use("jayp0521/mason-null-ls.nvim") -- bridges gap b/w mason & null-ls
 
 	-- treesitter configuration
@@ -117,28 +117,28 @@ return packer.startup(function(use)
 	use("andweeb/presence.nvim")
 
 	--duck plug
-	--use({
-		--"tamton-aquib/duck.nvim",
-		--config = function()
-			--vim.keymap.set("n", "<leader>dd", function()
-				--require("duck").hatch("🦆", 10)
-			--end, {})
-			--vim.keymap.set("n", "<leader>bruno", function()
-				--require("duck").hatch("🐈", 5.5)
-			--end, {})
+	use({
+		"tamton-aquib/duck.nvim",
+		config = function()
+			vim.keymap.set("n", "<leader>dd", function()
+				require("duck").hatch("🦆", 10)
+			end, {})
+			vim.keymap.set("n", "<leader>bruno", function()
+				require("duck").hatch("🐈", 5.5)
+			end, {})
 
-			--vim.keymap.set("n", "<leader>ph", function()
-				--require("duck").hatch("🐻", 6.0)
-			--end, {})
+			vim.keymap.set("n", "<leader>ph", function()
+				require("duck").hatch("🐻", 6.0)
+			end, {})
 
-			--vim.keymap.set("n", "<leader>bee", function()
-				--require("duck").hatch("🐝", 12.0)
-			--end, {})
-			--vim.keymap.set("n", "<leader>dk", function()
-				--require("duck").cook()
-			--end, {})
-		--end,
-	--})
+			vim.keymap.set("n", "<leader>bee", function()
+				require("duck").hatch("🐝", 12.0)
+			end, {})
+			vim.keymap.set("n", "<leader>dk", function()
+				require("duck").cook()
+			end, {})
+		end,
+	})
 
 	if packer_bootstrap then
 		require("packer").sync()
