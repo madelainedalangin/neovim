@@ -140,8 +140,8 @@ return packer.startup(function(use)
 		end,
 	})
 
-	--color column (gradual opacity)
-	use("Bekaboo/deadcolumn.nvim")
+	--smart column
+	use("m4xshen/smartcolumn.nvim")
 
 	if packer_bootstrap then
 		require("packer").sync()
