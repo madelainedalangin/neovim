@@ -5,6 +5,7 @@ end
 
 local lualine_nightfly = require("lualine.themes.nightfly")
 local lualine_everforest = require("lualine.themes.everforest")
+local lualine_gruvbox = require("lualine.themes.gruvbox")
 
 local new_colors = {
 	blue = "#65D1FF",
@@ -28,6 +29,6 @@ lualine_nightfly.command = {
 
 lualine.setup({
 	options = {
-		theme = lualine_everforest,
+		theme = lualine_gruvbox,
 	},
 })
