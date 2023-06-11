@@ -6,9 +6,15 @@
 --	return
 --end
 
-local status, _ = pcall(vim.cmd("colorscheme everforest"))
+--local status, _ = pcall(vim.cmd("colorscheme everforest"))
+--if not status then
+--	print("Color scheme not found!")
+--	return
+--end
+
+local status, _ = pcall(vim.cmd("colorscheme gruvbox"))
 if not status then
-	print("Color scheme not found!")
+	print("Color scheme not found")
 	return
 end
 

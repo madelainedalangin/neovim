@@ -34,7 +34,9 @@ return packer.startup(function(use)
 
 	--use("bluz71/vim-nightfly-guicolors") -- preferred colour scheme
 
-	use("sainnhe/everforest")
+	--use("sainnhe/everforest")
+
+	use("ellisonleao/gruvbox.nvim")
 
 	--melange colorscheme
 	--use("savq/melange-nvim")
