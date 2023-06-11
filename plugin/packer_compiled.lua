@@ -120,6 +120,11 @@ _G.packer_plugins = {
     path = "/Users/madelainedalangin/.local/share/nvim/site/pack/packer/start/duck.nvim",
     url = "https://github.com/tamton-aquib/duck.nvim"
   },
+  everforest = {
+    loaded = true,
+    path = "/Users/madelainedalangin/.local/share/nvim/site/pack/packer/start/everforest",
+    url = "https://github.com/sainnhe/everforest"
+  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/Users/madelainedalangin/.local/share/nvim/site/pack/packer/start/friendly-snippets",
@@ -246,11 +251,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/madelainedalangin/.local/share/nvim/site/pack/packer/start/vim-maximizer",
     url = "https://github.com/szw/vim-maximizer"
-  },
-  ["vim-nightfly-guicolors"] = {
-    loaded = true,
-    path = "/Users/madelainedalangin/.local/share/nvim/site/pack/packer/start/vim-nightfly-guicolors",
-    url = "https://github.com/bluz71/vim-nightfly-guicolors"
   },
   ["vim-surround"] = {
     loaded = true,

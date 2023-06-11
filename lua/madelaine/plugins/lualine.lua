@@ -4,6 +4,7 @@ if not status then
 end
 
 local lualine_nightfly = require("lualine.themes.nightfly")
+local lualine_everforest = require("lualine.themes.everforest")
 
 local new_colors = {
 	blue = "#65D1FF",
@@ -27,6 +28,6 @@ lualine_nightfly.command = {
 
 lualine.setup({
 	options = {
-		theme = lualine_nightfly,
+		theme = lualine_everforest,
 	},
 })
