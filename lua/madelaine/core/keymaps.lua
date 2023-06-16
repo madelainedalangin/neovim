@@ -56,40 +56,48 @@ keymap.set("n", "<leader>rs", ":LspRestart<CR>") -- mapping to restart lsp if ne
 keymap.set("n", "<S-Tab>", "<Cmd>BufferPrevious<CR>") --frequently used
 keymap.set("n", "<TAB>", "<Cmd>BufferNext<CR>") --frequently used
 
--- Re-order to previous/next
--- map("n", "<A-<>", "<Cmd>BufferMovePrevious<CR>", opts)
--- map("n", "<A->>", "<Cmd>BufferMoveNext<CR>", opts)
--- -- Goto buffer in position...
--- map("n", "<A-1>", "<Cmd>BufferGoto 1<CR>", opts)
--- map("n", "<A-2>", "<Cmd>BufferGoto 2<CR>", opts)
--- map("n", "<A-3>", "<Cmd>BufferGoto 3<CR>", opts)
--- map("n", "<A-4>", "<Cmd>BufferGoto 4<CR>", opts)
--- map("n", "<A-5>", "<Cmd>BufferGoto 5<CR>", opts)
--- map("n", "<A-6>", "<Cmd>BufferGoto 6<CR>", opts)
--- map("n", "<A-7>", "<Cmd>BufferGoto 7<CR>", opts)
--- map("n", "<A-8>", "<Cmd>BufferGoto 8<CR>", opts)
--- map("n", "<A-9>", "<Cmd>BufferGoto 9<CR>", opts)
--- map("n", "<A-0>", "<Cmd>BufferLast<CR>", opts)
--- -- Pin/unpin buffer
--- map("n", "<A-p>", "<Cmd>BufferPin<CR>", opts)
--- -- Close buffer
--- map("n", "<A-c>", "<Cmd>BufferClose<CR>", opts)
--- Wipeout buffer
---                 :BufferWipeout
--- Close commands
---                 :BufferCloseAllButCurrent
---                 :BufferCloseAllButPinned
---                 :BufferCloseAllButCurrentOrPinned
---                 :BufferCloseBuffersLeft
---                 :BufferCloseBuffersRight
--- Magic buffer-picking mode
--- map("n", "<C-p>", "<Cmd>BufferPick<CR>", opts)
--- -- Sort automatically by...
--- map("n", "<Space>bb", "<Cmd>BufferOrderByBufferNumber<CR>", opts)
--- map("n", "<Space>bd", "<Cmd>BufferOrderByDirectory<CR>", opts)
--- map("n", "<Space>bl", "<Cmd>BufferOrderByLanguage<CR>", opts)
--- map("n", "<Space>bw", "<Cmd>BufferOrderByWindowNumber<CR>", opts)
 
--- Other:
+--##BARBAR KEYMAPS I DONT REALLY USE BUT WILL KEEP IT HERE IN THE MEANTIME##--
+
+-- Re-order to previous/next
+-- keymap.set("n", "<A-<>", "<Cmd>BufferMovePrevious<CR>")
+-- keymap.set("n", "<A->>", "<Cmd>BufferMoveNext<CR>")
+
+-- -- Goto buffer in position...
+-- keymap.set("n", "<A-1>", "<Cmd>BufferGoto 1<CR>")
+-- keymap.set("n", "<A-2>", "<Cmd>BufferGoto 2<CR>")
+-- keymap.set("n", "<A-3>", "<Cmd>BufferGoto 3<CR>")
+-- keymap.set("n", "<A-4>", "<Cmd>BufferGoto 4<CR>")
+-- keymap.set("n", "<A-5>", "<Cmd>BufferGoto 5<CR>")
+-- keymap.set("n", "<A-6>", "<Cmd>BufferGoto 6<CR>")
+-- keymap.set("n", "<A-7>", "<Cmd>BufferGoto 7<CR>")
+-- keymap.set("n", "<A-8>", "<Cmd>BufferGoto 8<CR>")
+-- keymap.set("n", "<A-9>", "<Cmd>BufferGoto 9<CR>")
+-- keymap.set("n", "<A-0>", "<Cmd>BufferLast<CR>")
+
+-- -- Pin/unpin buffer
+keymap.set("n", "<A-p>", "<Cmd>BufferPin<CR>")
+
+-- -- Close buffer
+keymap.set("n", "<A-c>", "<Cmd>BufferClose<CR>")
+
+--Wipeout buffer
+                -- :BufferWipeout
+--Close commands
+                -- :BufferCloseAllButCurrent
+                -- :BufferCloseAllButPinned
+                -- :BufferCloseAllButCurrentOrPinned
+                -- :BufferCloseBuffersLeft
+                -- :BufferCloseBuffersRight
+-- Magic buffer-picking mode
+keymap.set("n", "<C-p>", "<Cmd>BufferPick<CR>")
+
+-- Sort automatically by...
+-- keymap.set("n", "<Space>bb", "<Cmd>BufferOrderByBufferNumber<CR>")
+-- keymap.set("n", "<Space>bd", "<Cmd>BufferOrderByDirectory<CR>")
+-- keymap.set("n", "<Space>bl", "<Cmd>BufferOrderByLanguage<CR>")
+-- keymap.set("n", "<Space>bw", "<Cmd>BufferOrderByWindowNumber<CR>")
+
+--Other:
 -- :BarbarEnable - enables barbar (enabled by default)
 -- :BarbarDisable - very bad command, should never be used
