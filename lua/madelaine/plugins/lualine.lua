@@ -4,7 +4,7 @@ if not status then
 end
 
 local lualine_nightfly = require("lualine.themes.nightfly")
-local lualine_everforest = require("lualine.themes.everforest")
+
 local lualine_gruvbox = require("lualine.themes.gruvbox")
 
 local new_colors = {
