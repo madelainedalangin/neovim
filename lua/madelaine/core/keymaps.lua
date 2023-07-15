@@ -10,11 +10,6 @@ keymap.set("i", "jk", "<ESC>")
 --goto beginning and and end
 keymap.set("n", "<C-b>", "<ESC>^i")
 keymap.set("n", "<C-e", "<End>")
---navigate with insert mode
-keymap.set("n", "<C-h>", "<Left>")
-keymap.set("n", "<C-l>", "<Right>")
-keymap.set("n", "<C-j>", "<Down>")
-keymap.set("n", "<C-k>", "<Up>")
 
 --clear search highlights with space + nh
 keymap.set("n", "<leader>nh", ":nohl<CR>")
@@ -88,7 +83,7 @@ keymap.set("n", "<TAB>", "<Cmd>BufferNext<CR>") --frequently used
 keymap.set("n", "<A-p>", "<Cmd>BufferPin<CR>")
 
 -- -- Close buffer
-keymap.set("n", "<A-c>", "<Cmd>BufferClose<CR>")
+keymap.set("n", "<leader>xx", "<Cmd>BufferClose<CR>")
 
 --Wipeout buffer
 -- :BufferWipeout
