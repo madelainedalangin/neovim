@@ -30,5 +30,11 @@ lualine_nightfly.command = {
 lualine.setup({
 	options = {
 		theme = lualine_gruvbox,
+		component_separators = {},
+		section_separators = {},
+		transparency = true,
+	},
+	sections = {
+		lualine_a = { "mode" },
 	},
 })
