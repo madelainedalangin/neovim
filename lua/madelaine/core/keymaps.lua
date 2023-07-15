@@ -7,6 +7,15 @@ local keymap = vim.keymap --for conciseness
 --insert (i), exit of insert (jk)
 keymap.set("i", "jk", "<ESC>")
 
+--goto beginning and and end
+keymap.set("n", "<C-b>", "<ESC>^i")
+keymap.set("n", "<C-e", "<End>")
+--navigate with insert mode
+keymap.set("n", "<C-h>", "<Left>")
+keymap.set("n", "<C-l>", "<Right>")
+keymap.set("n", "<C-j>", "<Down>")
+keymap.set("n", "<C-k>", "<Up>")
+
 --clear search highlights with space + nh
 keymap.set("n", "<leader>nh", ":nohl<CR>")
 
@@ -29,6 +38,7 @@ keymap.set("n", "<leader>sm", ":MaximizerToggle<CR>")
 
 --nvim tree
 keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>")
+keymap.set("n", "<C-n>", ":NvimTreeFocus<CR>")
 
 --telescope
 keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>") -- find files within current working directory, respects .gitignore
@@ -56,7 +66,6 @@ keymap.set("n", "<leader>rs", ":LspRestart<CR>") -- mapping to restart lsp if ne
 keymap.set("n", "<S-Tab>", "<Cmd>BufferPrevious<CR>") --frequently used
 keymap.set("n", "<TAB>", "<Cmd>BufferNext<CR>") --frequently used
 
-
 --##BARBAR KEYMAPS I DONT REALLY USE BUT WILL KEEP IT HERE IN THE MEANTIME##--
 
 -- Re-order to previous/next
@@ -82,13 +91,13 @@ keymap.set("n", "<A-p>", "<Cmd>BufferPin<CR>")
 keymap.set("n", "<A-c>", "<Cmd>BufferClose<CR>")
 
 --Wipeout buffer
-                -- :BufferWipeout
+-- :BufferWipeout
 --Close commands
-                -- :BufferCloseAllButCurrent
-                -- :BufferCloseAllButPinned
-                -- :BufferCloseAllButCurrentOrPinned
-                -- :BufferCloseBuffersLeft
-                -- :BufferCloseBuffersRight
+-- :BufferCloseAllButCurrent
+-- :BufferCloseAllButPinned
+-- :BufferCloseAllButCurrentOrPinned
+-- :BufferCloseBuffersLeft
+-- :BufferCloseBuffersRight
 -- Magic buffer-picking mode
 keymap.set("n", "<C-p>", "<Cmd>BufferPick<CR>")
 
