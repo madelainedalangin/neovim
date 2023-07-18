@@ -143,7 +143,7 @@ return packer.startup(function(use)
 	use("m4xshen/smartcolumn.nvim")
 
 	--vertical nested lines
-	use("lukas-reineke/indent-blankline.nvim")
+	use("lukas-reineke/indent-blankline.nvim") -- no custom setting
 
 	if packer_bootstrap then
 		require("packer").sync()
