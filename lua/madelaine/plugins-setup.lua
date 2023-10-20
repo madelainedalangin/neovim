@@ -34,7 +34,9 @@ return packer.startup(function(use)
 
 	--use("bluz71/vim-nightfly-guicolors") -- default color scheme
 
-	use("ellisonleao/gruvbox.nvim") -- preferred color scheme
+	use({ "catppuccin/nvim", as = "catppuccin-latte" })
+
+	--use("ellisonleao/gruvbox.nvim") -- preferred color scheme
 
 	--tmux & split window navigation
 	use("christoomey/vim-tmux-navigator")
@@ -143,7 +145,7 @@ return packer.startup(function(use)
 	use("m4xshen/smartcolumn.nvim")
 
 	--vertical nested lines
-	use("lukas-reineke/indent-blankline.nvim") -- no custom setting
+	--use("lukas-reineke/indent-blankline.nvim") -- no custom setting
 
 	if packer_bootstrap then
 		require("packer").sync()
