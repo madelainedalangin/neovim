@@ -32,7 +32,9 @@ return packer.startup(function(use)
 
 	use("LuaLS/lua-language-server")
 
-	use("bluz71/vim-nightfly-guicolors") -- default color scheme
+	--use("bluz71/vim-nightfly-guicolors") -- default color scheme
+
+	use({ "catppuccin/nvim", as = "catppuccin-latte" })
 
 	--use("ellisonleao/gruvbox.nvim") -- preferred color scheme
 
